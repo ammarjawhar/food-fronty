@@ -1,0 +1,115 @@
+.login-popup {
+  z-index: 999;
+  position: absolute;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+}
+
+.login-form {
+  place-self: center;
+  width: max(23vw, 330px);
+  color: #808080;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 14px;
+
+  animation: fadeIn 1.5s;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+
+  h1 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  img {
+    cursor: pointer;
+  }
+}
+.log-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.log-inputs input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  caret-color: tomato;
+}
+.log-inputs input:focus {
+  border-color: tomato;
+}
+.log-inputs .input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.log-inputs button {
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: tomato;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.log-inputs button:hover {
+  background-color: #ff6e6e;
+}
+
+.log-inputs .input-condition{
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    font-size: 14px;
+    color: #808080;
+    margin-top: -10px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: tomato;
+margin-top: 5px;
+}
+.state{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+gap: 10px;
+}
+.state{
+    p{
+        font-size: 14px;
+        color: #808080;
+
+    }
+
+    button{
+     border: none;
+        color: tomato;   
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    button:hover{
+        color: #f07272;  
+    }
+
+}

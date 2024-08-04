@@ -1,0 +1,30 @@
+.app-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto;
+  gap: 30px;
+}
+ .app-download p{
+  text-align: center;
+  color: #000;
+  font-size: 1.5vw;
+  font-weight: 500;
+  max-width: 60%;
+}
+.app-download strong {
+  color: tomato;
+}
+.platforms {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  img {
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

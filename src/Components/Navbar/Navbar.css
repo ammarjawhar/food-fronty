@@ -1,0 +1,141 @@
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 150px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  color: #49557e;
+}
+.nav-menu li {
+  cursor: pointer;
+}
+.nav-menu .active {
+  padding-bottom: 4px;
+  border-bottom: 2px solid tomato;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navbar button {
+  background: transparent;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid tomato;
+  color: #49557e;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.navbar-right .search-icon {
+  cursor: pointer;
+}
+.navbar button:hover {
+  background: tomato;
+  color: white;
+}
+.navbar-right .navbar-basket-icon {
+  position: relative;
+  cursor: pointer;
+}
+.navbar-right .dot {
+  position: absolute;
+  background-color: tomato;
+  color: #fff;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  top: -8px;
+  right: -8px;
+}
+
+@media (max-width: 1050px) {
+  .nav-menu .logo {
+    width: 140px;
+  }
+  .nav-menu {
+    gap: 20px;
+    font-size: 16px;
+  }
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img {
+    width: 20px;
+  }
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+}
+@media (max-width: 900px) {
+  .nav-menu .logo {
+    width: 120px;
+  }
+  .nav-menu {
+    gap: 15px;
+    font-size: 14px;
+  }
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img {
+    width: 20px;
+  }
+  .navbar-right button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+.navbar-right .profile {
+  position: relative;
+}
+
+.navbar-right .profile-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 999;
+  right: -50px;
+  top: 100%;
+
+}
+.navbar-right .profile:hover .profile-dropdown {
+  width: 150px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 25px;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  outline: 2px solid rgba(255, 99, 71, 0.342);
+  list-style: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    img{
+      width: 20px;
+    }
+    &:hover{
+      color: tomato;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .nav-menu {
+    display: none;
+  }
+}
