@@ -7,17 +7,22 @@ import Footer from './Components/Footer/Footer';
 import { useContext, useEffect, useState } from 'react';
 import LoginPopup from './Components/Loginpopup/Loginpopup';
 import { StoreContext } from './Context/StoreContext';
+import axios from 'axios';
+
+
 
 const App = () => {
-   const {token} = useContext(StoreContext) 
+  const { token } = useContext(StoreContext);
   const [showLogin, setShowLogin] = useState(false);
-  const getUserData = async() => {
-      const res = await axios.get(Apis.userData.url , {headers: {token}})
-      console.log(res.data)
-  }
+  
+  /*const getUserData = async () => {
+    const res = await axios.get("http://localhost:5000/api/user" , { headers: { token } });
+    console.log(res.data);
+  };
   useEffect(() => {
-    getUserData()
-  }, [])
+    getUserData();
+  }, []);
+  */
 
   return (
     <>

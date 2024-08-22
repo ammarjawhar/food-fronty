@@ -9,7 +9,7 @@ const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const [token, setToken] = useState('');
   const [foodList, setFoodList] = useState([]);
-  const url = 'https://food-del-paz9.vercel.app';
+  const url = 'https://food-apis-woad.vercel.app';
 
   const addToCart = async (id) => {
     if (!cartItems[id]) {
